@@ -8,12 +8,16 @@
 
 /* Begin PBXBuildFile section */
 		262E568D1F5CD6F4009B2422 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 262E568C1F5CD6F4009B2422 /* AppDelegate.swift */; };
-		262E568F1F5CD6F4009B2422 /* SignInVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 262E568E1F5CD6F4009B2422 /* SignInVC.swift */; };
 		262E56921F5CD6F4009B2422 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 262E56901F5CD6F4009B2422 /* Main.storyboard */; };
 		262E56951F5CD6F4009B2422 /* DragNet.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 262E56931F5CD6F4009B2422 /* DragNet.xcdatamodeld */; };
 		262E56971F5CD6F4009B2422 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 262E56961F5CD6F4009B2422 /* Assets.xcassets */; };
 		262E569A1F5CD6F4009B2422 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 262E56981F5CD6F4009B2422 /* LaunchScreen.storyboard */; };
 		262E56A21F5CDA3F009B2422 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 262E56A11F5CDA3F009B2422 /* GoogleService-Info.plist */; };
+		265391CE1F5DF6BD00C5EEF5 /* GoogleAndFacebookBtns.swift in Sources */ = {isa = PBXBuildFile; fileRef = 265391CD1F5DF6BD00C5EEF5 /* GoogleAndFacebookBtns.swift */; };
+		265391D31F5DF70F00C5EEF5 /* FacebookBtn.swift in Sources */ = {isa = PBXBuildFile; fileRef = 265391D21F5DF70F00C5EEF5 /* FacebookBtn.swift */; };
+		265391D51F5DF7EE00C5EEF5 /* GoogleBtn.swift in Sources */ = {isa = PBXBuildFile; fileRef = 265391D41F5DF7EE00C5EEF5 /* GoogleBtn.swift */; };
+		265391D81F5DFC9800C5EEF5 /* BounceButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 265391D71F5DFC9800C5EEF5 /* BounceButton.swift */; };
+		265391DA1F5DFEA800C5EEF5 /* SignInVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 265391D91F5DFEA800C5EEF5 /* SignInVC.swift */; };
 		5CE5136D3ED1F32F94CCA210 /* Pods_DragNet.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 708E4DEECD64BC2B85263974 /* Pods_DragNet.framework */; };
 /* End PBXBuildFile section */
 
@@ -21,13 +25,17 @@
 		1865278AE39AF2E8BCCD80D1 /* Pods-DragNet.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DragNet.debug.xcconfig"; path = "Pods/Target Support Files/Pods-DragNet/Pods-DragNet.debug.xcconfig"; sourceTree = "<group>"; };
 		262E56891F5CD6F4009B2422 /* DragNet.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DragNet.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		262E568C1F5CD6F4009B2422 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		262E568E1F5CD6F4009B2422 /* SignInVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInVC.swift; sourceTree = "<group>"; };
 		262E56911F5CD6F4009B2422 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		262E56941F5CD6F4009B2422 /* DragNet.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = DragNet.xcdatamodel; sourceTree = "<group>"; };
 		262E56961F5CD6F4009B2422 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		262E56991F5CD6F4009B2422 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		262E569B1F5CD6F4009B2422 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		262E56A11F5CDA3F009B2422 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		265391CD1F5DF6BD00C5EEF5 /* GoogleAndFacebookBtns.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GoogleAndFacebookBtns.swift; sourceTree = "<group>"; };
+		265391D21F5DF70F00C5EEF5 /* FacebookBtn.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FacebookBtn.swift; sourceTree = "<group>"; };
+		265391D41F5DF7EE00C5EEF5 /* GoogleBtn.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GoogleBtn.swift; sourceTree = "<group>"; };
+		265391D71F5DFC9800C5EEF5 /* BounceButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BounceButton.swift; sourceTree = "<group>"; };
+		265391D91F5DFEA800C5EEF5 /* SignInVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignInVC.swift; sourceTree = "<group>"; };
 		596D5A52913D44E34E1AC964 /* Pods-DragNet.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DragNet.release.xcconfig"; path = "Pods/Target Support Files/Pods-DragNet/Pods-DragNet.release.xcconfig"; sourceTree = "<group>"; };
 		708E4DEECD64BC2B85263974 /* Pods_DragNet.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DragNet.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -65,6 +73,8 @@
 		262E568B1F5CD6F4009B2422 /* DragNet */ = {
 			isa = PBXGroup;
 			children = (
+				265391D61F5DFC8700C5EEF5 /* Custom Controlls */,
+				265391CF1F5DF6D100C5EEF5 /* PaintcodeBtns */,
 				265391CC1F5DD71E00C5EEF5 /* Model */,
 				265391CB1F5DD71A00C5EEF5 /* View */,
 				265391CA1F5DD71100C5EEF5 /* Controller */,
@@ -82,7 +92,7 @@
 		265391CA1F5DD71100C5EEF5 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
-				262E568E1F5CD6F4009B2422 /* SignInVC.swift */,
+				265391D91F5DFEA800C5EEF5 /* SignInVC.swift */,
 			);
 			name = Controller;
 			sourceTree = "<group>";
@@ -90,6 +100,7 @@
 		265391CB1F5DD71A00C5EEF5 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				265391CD1F5DF6BD00C5EEF5 /* GoogleAndFacebookBtns.swift */,
 			);
 			name = View;
 			sourceTree = "<group>";
@@ -99,6 +110,23 @@
 			children = (
 			);
 			name = Model;
+			sourceTree = "<group>";
+		};
+		265391CF1F5DF6D100C5EEF5 /* PaintcodeBtns */ = {
+			isa = PBXGroup;
+			children = (
+				265391D21F5DF70F00C5EEF5 /* FacebookBtn.swift */,
+				265391D41F5DF7EE00C5EEF5 /* GoogleBtn.swift */,
+			);
+			name = PaintcodeBtns;
+			sourceTree = "<group>";
+		};
+		265391D61F5DFC8700C5EEF5 /* Custom Controlls */ = {
+			isa = PBXGroup;
+			children = (
+				265391D71F5DFC9800C5EEF5 /* BounceButton.swift */,
+			);
+			name = "Custom Controlls";
 			sourceTree = "<group>";
 		};
 		29C3512B3E0E3C80288C974F /* Pods */ = {
@@ -243,9 +271,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				262E568F1F5CD6F4009B2422 /* SignInVC.swift in Sources */,
 				262E568D1F5CD6F4009B2422 /* AppDelegate.swift in Sources */,
+				265391D31F5DF70F00C5EEF5 /* FacebookBtn.swift in Sources */,
 				262E56951F5CD6F4009B2422 /* DragNet.xcdatamodeld in Sources */,
+				265391CE1F5DF6BD00C5EEF5 /* GoogleAndFacebookBtns.swift in Sources */,
+				265391DA1F5DFEA800C5EEF5 /* SignInVC.swift in Sources */,
+				265391D81F5DFC9800C5EEF5 /* BounceButton.swift in Sources */,
+				265391D51F5DF7EE00C5EEF5 /* GoogleBtn.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

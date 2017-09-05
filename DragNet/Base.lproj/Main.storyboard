@@ -118,6 +118,9 @@
                                 <state key="normal" title="SIgn in!">
                                     <color key="titleColor" red="0.89074397208121825" green="0.89074397208121825" blue="0.89074397208121825" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
+                                <connections>
+                                    <action selector="signInTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="03Y-gh-VRx"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -157,6 +160,8 @@
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="emailTextField" destination="aal-3u-zOs" id="7zX-nF-hur"/>
+                        <outlet property="passwordTextField" destination="Zi5-EP-GfZ" id="EcX-OW-E90"/>
                         <outlet property="signInBtn" destination="3lg-4y-EKb" id="bOV-NP-LmH"/>
                     </connections>
                 </viewController>

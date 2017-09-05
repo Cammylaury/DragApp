@@ -37,6 +37,23 @@
                                             <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" ambiguous="YES" id="RIA-eU-e01">
                                                 <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="If you don't have an acconut, one will be created for you." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GF7-s0-IKE">
+                                                        <rect key="frame" x="17" y="573" width="381" height="41"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="41" id="VtW-ax-zPh"/>
+                                                        </constraints>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                                        <color key="textColor" red="0.99992352724075317" green="1" blue="0.99988299608230591" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                </subviews>
+                                                <constraints>
+                                                    <constraint firstAttribute="bottom" secondItem="GF7-s0-IKE" secondAttribute="bottom" constant="124" id="FOd-LX-je6"/>
+                                                    <constraint firstItem="GF7-s0-IKE" firstAttribute="centerX" secondItem="RIA-eU-e01" secondAttribute="centerX" id="UqI-kZ-rE6"/>
+                                                    <constraint firstItem="GF7-s0-IKE" firstAttribute="leading" secondItem="RIA-eU-e01" secondAttribute="leadingMargin" id="c1Y-ff-F55"/>
+                                                    <constraint firstAttribute="trailing" secondItem="GF7-s0-IKE" secondAttribute="trailing" constant="25" id="vhE-xf-iAU"/>
+                                                </constraints>
                                             </view>
                                             <vibrancyEffect>
                                                 <blurEffect style="light"/>
@@ -163,11 +180,30 @@
                         <outlet property="emailTextField" destination="aal-3u-zOs" id="7zX-nF-hur"/>
                         <outlet property="passwordTextField" destination="Zi5-EP-GfZ" id="EcX-OW-E90"/>
                         <outlet property="signInBtn" destination="3lg-4y-EKb" id="bOV-NP-LmH"/>
+                        <segue destination="r7x-yw-F9l" kind="show" identifier="goToFeed" id="Ego-Af-jsA"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="32.799999999999997" y="37.331334332833585"/>
+            <point key="canvasLocation" x="31.884057971014496" y="36.684782608695656"/>
+        </scene>
+        <!--FeedVC-->
+        <scene sceneID="8oT-Ae-ngI">
+            <objects>
+                <viewController id="r7x-yw-F9l" customClass="FeedVC" customModule="DragNet" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="gM2-vO-LSH"/>
+                        <viewControllerLayoutGuide type="bottom" id="9w4-ZC-lhY"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="5WJ-Xi-HcO">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="d4D-Ns-D5W" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="829" y="37"/>
         </scene>
     </scenes>
     <resources>

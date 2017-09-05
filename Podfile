@@ -12,6 +12,9 @@ target 'DragNet' do
   pod 'Firebase/Database'
   pod 'Firebase/Storage'
   pod 'FBSDKLoginKit'
-  pod 'SwiftKeychainWrapper'  
+  pod 'SwiftKeychainWrapper'
+  pod 'FacebookCore'
+  pod 'FacebookLogin'
+  pod 'FacebookShare'
 
 end

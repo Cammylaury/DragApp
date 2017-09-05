@@ -32,18 +32,22 @@
 	<array>
 		<string>UIInterfaceOrientationPortrait</string>
 	</array>
-    <key>CFBundleURLTypes</key>
-    <array>
-        <dict>
-            <key>CFBundleURLSchemes</key>
-            <array>
-                <string>fb376594466091303</string>
-            </array>
-        </dict>
-    </array>
-    <key>FacebookAppID</key>
-    <string>376594466091303</string>
-    <key>FacebookDisplayName</key>
-    <string>Dragnet</string>
+	<key>CFBundleURLTypes</key>
+	<array>
+		<dict>
+			<key>CFBundleURLSchemes</key>
+			<array>
+				<string>fb376594466091303</string>
+			</array>
+		</dict>
+	</array>
+	<key>FacebookAppID</key>
+	<string>376594466091303</string>
+	<key>LSApplicationQueriesSchemes</key>
+	<array>
+		<string>fbauth2</string>
+	</array>
+	<key>FacebookDisplayName</key>
+	<string>Dragnet</string>
 </dict>
 </plist>

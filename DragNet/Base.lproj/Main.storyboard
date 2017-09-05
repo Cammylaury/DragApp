@@ -47,7 +47,7 @@
                                 <blurEffect style="light"/>
                             </visualEffectView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Please choose a sign in method" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="r9p-3f-qwd">
-                                <rect key="frame" x="87" y="347.66666666666669" width="241.66666666666669" height="41"/>
+                                <rect key="frame" x="86.333333333333343" y="348" width="241.66666666666666" height="41"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="41" id="cJl-Xl-mSh"/>
                                 </constraints>
@@ -71,21 +71,21 @@
                                 </constraints>
                             </imageView>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Please enter your email." textAlignment="natural" minimumFontSize="17" clearButtonMode="always" translatesAutoresizingMaskIntoConstraints="NO" id="aal-3u-zOs">
-                                <rect key="frame" x="20" y="398.66666666666669" width="374" height="30"/>
+                                <rect key="frame" x="20" y="399" width="374" height="30"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" enablesReturnKeyAutomatically="YES"/>
                             </textField>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Please enter your password." textAlignment="natural" minimumFontSize="17" clearButtonMode="always" translatesAutoresizingMaskIntoConstraints="NO" id="Zi5-EP-GfZ">
-                                <rect key="frame" x="20" y="465.66666666666669" width="374" height="30"/>
+                                <rect key="frame" x="20" y="466" width="374" height="30"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" enablesReturnKeyAutomatically="YES" secureTextEntry="YES"/>
                             </textField>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Cbe-AS-mmL">
-                                <rect key="frame" x="188.66666666666666" y="640" width="36" height="57"/>
+                                <rect key="frame" x="189" y="640" width="36" height="57"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="36" id="CgI-A3-hZD"/>
@@ -93,7 +93,7 @@
                                 </constraints>
                             </view>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="RxU-ks-yRR">
-                                <rect key="frame" x="159.66666666666666" y="621" width="95" height="95"/>
+                                <rect key="frame" x="160" y="621" width="95" height="95"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="o9j-Ih-OzY" userLabel="Facebook Button" customClass="FacebookBtn" customModule="DragNet" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="0.0" width="95" height="95"/>
@@ -108,7 +108,7 @@
                                 </subviews>
                             </stackView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3lg-4y-EKb" customClass="BounceButton" customModule="DragNet" customModuleProvider="target">
-                                <rect key="frame" x="126.66666666666669" y="511.66666666666663" width="161" height="45.999999999999886"/>
+                                <rect key="frame" x="127" y="512" width="161" height="46"/>
                                 <color key="backgroundColor" red="0.71884914340101524" green="0.38311279233993734" blue="0.38224526439820472" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="46" id="gQg-0O-NuS"/>

@@ -14,7 +14,7 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "4679092D63D4B8DBF2A2CAAB713F99B0"
+               BlueprintIdentifier = "6BAFD65D3DD944D79F58C683920750CC"
                BuildableName = "Pods_DragNet.framework"
                BlueprintName = "Pods-DragNet"
                ReferencedContainer = "container:Pods.xcodeproj">
@@ -45,7 +45,7 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "4679092D63D4B8DBF2A2CAAB713F99B0"
+            BlueprintIdentifier = "6BAFD65D3DD944D79F58C683920750CC"
             BuildableName = "Pods_DragNet.framework"
             BlueprintName = "Pods-DragNet"
             ReferencedContainer = "container:Pods.xcodeproj">

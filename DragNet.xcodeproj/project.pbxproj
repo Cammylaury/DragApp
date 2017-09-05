@@ -36,6 +36,7 @@
 		265391D41F5DF7EE00C5EEF5 /* GoogleBtn.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GoogleBtn.swift; sourceTree = "<group>"; };
 		265391D71F5DFC9800C5EEF5 /* BounceButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BounceButton.swift; sourceTree = "<group>"; };
 		265391D91F5DFEA800C5EEF5 /* SignInVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignInVC.swift; sourceTree = "<group>"; };
+		265391E31F5E4C2300C5EEF5 /* DragNet.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = DragNet.entitlements; sourceTree = "<group>"; };
 		596D5A52913D44E34E1AC964 /* Pods-DragNet.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DragNet.release.xcconfig"; path = "Pods/Target Support Files/Pods-DragNet/Pods-DragNet.release.xcconfig"; sourceTree = "<group>"; };
 		708E4DEECD64BC2B85263974 /* Pods_DragNet.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DragNet.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -73,6 +74,7 @@
 		262E568B1F5CD6F4009B2422 /* DragNet */ = {
 			isa = PBXGroup;
 			children = (
+				265391E31F5E4C2300C5EEF5 /* DragNet.entitlements */,
 				265391D61F5DFC8700C5EEF5 /* Custom Controlls */,
 				265391CF1F5DF6D100C5EEF5 /* PaintcodeBtns */,
 				265391CC1F5DD71E00C5EEF5 /* Model */,
@@ -183,6 +185,11 @@
 						CreatedOnToolsVersion = 8.3.3;
 						DevelopmentTeam = 5GP62UZSP9;
 						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.Keychain = {
+								enabled = 0;
+							};
+						};
 					};
 				};
 			};

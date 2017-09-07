@@ -16,5 +16,12 @@ target 'DragNet' do
   pod 'FacebookCore'
   pod 'FacebookLogin'
   pod 'FacebookShare'
+  pod 'FaveButton', '~> 2.0.3'
+  pod 'DZNEmptyDataSet'
+  pod 'ChameleonFramework'
+  pod 'GPUImage'
+  pod 'SlackTextViewController'
+  pod 'PermissionScope'
+  pod 'MGSwipeTableCell'
 
 end

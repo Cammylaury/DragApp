@@ -9,6 +9,16 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
+		<key>ChameleonFramework.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>DZNEmptyDataSet.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
 		<key>FBSDKCoreKit.xcscheme</key>
 		<dict>
 			<key>isShown</key>
@@ -39,6 +49,16 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
+		<key>FaveButton.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>GPUImage.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
 		<key>GTMSessionFetcher.xcscheme</key>
 		<dict>
 			<key>isShown</key>
@@ -49,7 +69,22 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
+		<key>MGSwipeTableCell.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>PermissionScope.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
 		<key>Pods-DragNet.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>SlackTextViewController.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
@@ -62,17 +97,32 @@
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
+		<key>0E7E2BF8935B4BC1CCFCB5D2FC05CCAB</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
 		<key>107A9565F9DF88517DFD3E28C05B2B96</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>1E3C5B2069CFEBC28E0D35230A05DC6A</key>
+		<key>1CD80321715FDB12A3A31B7BCB09EA28</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>2597E77C6D3830202BFB48C276629F0A</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
 		<key>332F91393FB1DE033D370B4CEDDD5FCF</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>44A4D05FE4775A4E4ED900825BC46F0F</key>
 		<dict>
 			<key>primary</key>
 			<true/>
@@ -92,12 +142,22 @@
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>6BAFD65D3DD944D79F58C683920750CC</key>
+		<key>6699E7E0E9FC8237C27F4657D5DAD802</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
 		<key>7335E9C9689F3B8A16F063A884748533</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>7C08227B6E14D87F0F5B0FD6DFFA1A3E</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>8A267660E1AD4832DE75665F2F87AEA3</key>
 		<dict>
 			<key>primary</key>
 			<true/>
@@ -108,6 +168,16 @@
 			<true/>
 		</dict>
 		<key>C052BEBFBD0AB5218CC64BA3450F6547</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>D386C75EFD4F03725E4EFB866B600B9A</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>D973DBB3FF803A3BAC3F870E70F87628</key>
 		<dict>
 			<key>primary</key>
 			<true/>

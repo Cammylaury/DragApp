@@ -26,8 +26,8 @@ class SignInVC: UIViewController {
         signInBtn.layer.cornerRadius = 12
         
         
-        
     }
+    
     
     override func viewDidAppear(_ animated: Bool) {
         if let _ = KeychainWrapper.standard.string(forKey: KEY_UID) {
@@ -103,6 +103,9 @@ class SignInVC: UIViewController {
         print("Data saved to keychain \(keychainResult)")
         performSegue(withIdentifier: "goToFeed", sender: nil)
     }
+    
+    
+    
 }
 
 

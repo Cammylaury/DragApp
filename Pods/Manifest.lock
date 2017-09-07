@@ -5,6 +5,10 @@ PODS:
   - Bolts/AppLinks (1.8.4):
     - Bolts/Tasks
   - Bolts/Tasks (1.8.4)
+  - ChameleonFramework (2.1.0):
+    - ChameleonFramework/Default (= 2.1.0)
+  - ChameleonFramework/Default (2.1.0)
+  - DZNEmptyDataSet (1.8.1)
   - FacebookCore (0.2.0):
     - Bolts (~> 1.8)
     - FBSDKCoreKit (~> 4.15)
@@ -18,6 +22,7 @@ PODS:
     - FacebookCore (~> 0.2)
     - FBSDKCoreKit (~> 4.15)
     - FBSDKShareKit (~> 4.15)
+  - FaveButton (2.0.3)
   - FBSDKCoreKit (4.18.0):
     - Bolts (~> 1.7)
   - FBSDKLoginKit (4.18.0):
@@ -68,25 +73,39 @@ PODS:
     - GoogleToolboxForMac/Defines (= 2.1.0)
     - GoogleToolboxForMac/NSString+URLArguments (= 2.1.0)
   - GoogleToolboxForMac/NSString+URLArguments (2.1.0)
+  - GPUImage (0.1.7)
   - GTMSessionFetcher/Core (1.1.7)
+  - MGSwipeTableCell (1.5.6)
+  - PermissionScope (1.1.1)
+  - SlackTextViewController (1.9.5)
   - SwiftKeychainWrapper (3.0.1)
 
 DEPENDENCIES:
+  - ChameleonFramework
+  - DZNEmptyDataSet
   - FacebookCore
   - FacebookLogin
   - FacebookShare
+  - FaveButton (~> 2.0.3)
   - FBSDKLoginKit
   - Firebase/Auth
   - Firebase/Core
   - Firebase/Database
   - Firebase/Storage
+  - GPUImage
+  - MGSwipeTableCell
+  - PermissionScope
+  - SlackTextViewController
   - SwiftKeychainWrapper
 
 SPEC CHECKSUMS:
   Bolts: 8a7995239dbe724f9cba2248b766d48b7ebdd322
+  ChameleonFramework: d21a3cc247abfe5e37609a283a8238b03575cf64
+  DZNEmptyDataSet: 9525833b9e68ac21c30253e1d3d7076cc828eaa7
   FacebookCore: 2cb3f0fbff218e9d3119cec84bae983b232412de
   FacebookLogin: c9d606504735780a9e3002465a615512e0a691a5
   FacebookShare: 8e9ee8ea06505e6a1d3d719b0cc63e840fb8aaeb
+  FaveButton: cfcbc5e73da159c4f916613da5687357b5bb4783
   FBSDKCoreKit: 15fef8804a4629f98c6f4e55e81a76c9d725d85e
   FBSDKLoginKit: 6773073e970b2b15fb12e451ce7f11da0532b880
   FBSDKShareKit: 0b8d6cc3f103c75297eb3c62caec284a2ccf1b9e
@@ -100,9 +119,13 @@ SPEC CHECKSUMS:
   GoogleInterchangeUtilities: d5bc4d88d5b661ab72f9d70c58d02ca8c27ad1f7
   GoogleSymbolUtilities: 631ee17048aa5e9ab133470d768ea997a5ef9b96
   GoogleToolboxForMac: 2b2596cbb7186865e98cadf2b1e262d851c2b168
+  GPUImage: 733a5f0fab92df9de1c37ba9df520a833ccb406d
   GTMSessionFetcher: a1f8ed39e4fe21c68957daed472c7afbcdf29166
+  MGSwipeTableCell: 616700eb0ffd1c611ba909066cb7fd739790a0a7
+  PermissionScope: a30c16e015779ba27c97c124e7539e27b5829de2
+  SlackTextViewController: fbcdadbb8090673f604484ff5b6eb8d77baed42a
   SwiftKeychainWrapper: 38952a3636320ae61bad3513cadd870929de7a4a
 
-PODFILE CHECKSUM: 3cc37dfdc1ac81a070e991c1f4ee76e745a8f12a
+PODFILE CHECKSUM: 9020739e758b2603f799c2abfbb692541e328817
 
 COCOAPODS: 1.1.1

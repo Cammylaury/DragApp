@@ -25,6 +25,10 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         FIRApp.configure()
         FBSDKApplicationDelegate.sharedInstance().application(application, didFinishLaunchingWithOptions: launchOptions)
         
+        //Change the color of tab abr items
+        
+        UITabBar.appearance().tintColor = UIColor(red:0.83, green:0.51, blue:0.80, alpha:1.0)
+        
         return true
     }
 

@@ -22,6 +22,10 @@
 		267B347A1F606D290007088E /* SearchVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 267B34791F606D290007088E /* SearchVC.swift */; };
 		267B34811F606F4B0007088E /* SWRevealViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 267B34801F606F4B0007088E /* SWRevealViewController.m */; };
 		267B34841F6072C50007088E /* SettingsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 267B34831F6072C50007088E /* SettingsVC.swift */; };
+		267B34861F60DA540007088E /* CameraVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 267B34851F60DA540007088E /* CameraVC.swift */; };
+		267B348A1F619C670007088E /* UIScrollView+EmptyDataSet.m in Sources */ = {isa = PBXBuildFile; fileRef = 267B34891F619C670007088E /* UIScrollView+EmptyDataSet.m */; };
+		267B348C1F619F270007088E /* tableViewTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 267B348B1F619F270007088E /* tableViewTableViewController.swift */; };
+		267B348E1F61A7330007088E /* UserNameVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 267B348D1F61A7330007088E /* UserNameVC.swift */; };
 		2684235F1F5EE17E00BC610F /* FeedVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2684235E1F5EE17E00BC610F /* FeedVC.swift */; };
 		5CE5136D3ED1F32F94CCA210 /* Pods_DragNet.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 708E4DEECD64BC2B85263974 /* Pods_DragNet.framework */; };
 /* End PBXBuildFile section */
@@ -48,6 +52,11 @@
 		267B347F1F606F4B0007088E /* SWRevealViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SWRevealViewController.h; path = "../../../Downloads/Desktop Backgrounds/SWRevealViewController.h"; sourceTree = "<group>"; };
 		267B34801F606F4B0007088E /* SWRevealViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SWRevealViewController.m; path = "../../../Downloads/Desktop Backgrounds/SWRevealViewController.m"; sourceTree = "<group>"; };
 		267B34831F6072C50007088E /* SettingsVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsVC.swift; sourceTree = "<group>"; };
+		267B34851F60DA540007088E /* CameraVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CameraVC.swift; sourceTree = "<group>"; };
+		267B34881F619C670007088E /* UIScrollView+EmptyDataSet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIScrollView+EmptyDataSet.h"; sourceTree = "<group>"; };
+		267B34891F619C670007088E /* UIScrollView+EmptyDataSet.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIScrollView+EmptyDataSet.m"; sourceTree = "<group>"; };
+		267B348B1F619F270007088E /* tableViewTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = tableViewTableViewController.swift; sourceTree = "<group>"; };
+		267B348D1F61A7330007088E /* UserNameVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserNameVC.swift; sourceTree = "<group>"; };
 		2684235E1F5EE17E00BC610F /* FeedVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FeedVC.swift; sourceTree = "<group>"; };
 		596D5A52913D44E34E1AC964 /* Pods-DragNet.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DragNet.release.xcconfig"; path = "Pods/Target Support Files/Pods-DragNet/Pods-DragNet.release.xcconfig"; sourceTree = "<group>"; };
 		708E4DEECD64BC2B85263974 /* Pods_DragNet.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DragNet.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -88,7 +97,7 @@
 			children = (
 				265391E41F5EDB7700C5EEF5 /* Constants */,
 				265391E31F5E4C2300C5EEF5 /* DragNet.entitlements */,
-				265391D61F5DFC8700C5EEF5 /* Custom Controlls */,
+				265391D61F5DFC8700C5EEF5 /* Custom Controls */,
 				265391CF1F5DF6D100C5EEF5 /* PaintcodeBtns */,
 				265391CC1F5DD71E00C5EEF5 /* Model */,
 				265391CB1F5DD71A00C5EEF5 /* View */,
@@ -107,11 +116,15 @@
 		265391CA1F5DD71100C5EEF5 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				267B348B1F619F270007088E /* tableViewTableViewController.swift */,
 				265391D91F5DFEA800C5EEF5 /* SignInVC.swift */,
 				2684235E1F5EE17E00BC610F /* FeedVC.swift */,
 				267B34791F606D290007088E /* SearchVC.swift */,
 				267B34831F6072C50007088E /* SettingsVC.swift */,
-				267B34821F6070560007088E /* OBJ-C */,
+				267B34851F60DA540007088E /* CameraVC.swift */,
+				267B348D1F61A7330007088E /* UserNameVC.swift */,
+				267B34871F619BFB0007088E /* Empty Data Set */,
+				267B34821F6070560007088E /* RevealViewController */,
 			);
 			name = Controller;
 			sourceTree = "<group>";
@@ -140,12 +153,12 @@
 			name = PaintcodeBtns;
 			sourceTree = "<group>";
 		};
-		265391D61F5DFC8700C5EEF5 /* Custom Controlls */ = {
+		265391D61F5DFC8700C5EEF5 /* Custom Controls */ = {
 			isa = PBXGroup;
 			children = (
 				265391D71F5DFC9800C5EEF5 /* BounceButton.swift */,
 			);
-			name = "Custom Controlls";
+			name = "Custom Controls";
 			sourceTree = "<group>";
 		};
 		265391E41F5EDB7700C5EEF5 /* Constants */ = {
@@ -156,14 +169,23 @@
 			name = Constants;
 			sourceTree = "<group>";
 		};
-		267B34821F6070560007088E /* OBJ-C */ = {
+		267B34821F6070560007088E /* RevealViewController */ = {
 			isa = PBXGroup;
 			children = (
 				267B347E1F606F4B0007088E /* DragNet-Bridging-Header.h */,
 				267B347F1F606F4B0007088E /* SWRevealViewController.h */,
 				267B34801F606F4B0007088E /* SWRevealViewController.m */,
 			);
-			name = "OBJ-C";
+			name = RevealViewController;
+			sourceTree = "<group>";
+		};
+		267B34871F619BFB0007088E /* Empty Data Set */ = {
+			isa = PBXGroup;
+			children = (
+				267B34881F619C670007088E /* UIScrollView+EmptyDataSet.h */,
+				267B34891F619C670007088E /* UIScrollView+EmptyDataSet.m */,
+			);
+			name = "Empty Data Set";
 			sourceTree = "<group>";
 		};
 		29C3512B3E0E3C80288C974F /* Pods */ = {
@@ -317,13 +339,17 @@
 				2684235F1F5EE17E00BC610F /* FeedVC.swift in Sources */,
 				267B347A1F606D290007088E /* SearchVC.swift in Sources */,
 				262E568D1F5CD6F4009B2422 /* AppDelegate.swift in Sources */,
+				267B348C1F619F270007088E /* tableViewTableViewController.swift in Sources */,
+				267B348E1F61A7330007088E /* UserNameVC.swift in Sources */,
 				265391D31F5DF70F00C5EEF5 /* FacebookBtn.swift in Sources */,
 				262E56951F5CD6F4009B2422 /* DragNet.xcdatamodeld in Sources */,
 				267B34841F6072C50007088E /* SettingsVC.swift in Sources */,
+				267B348A1F619C670007088E /* UIScrollView+EmptyDataSet.m in Sources */,
 				265391CE1F5DF6BD00C5EEF5 /* GoogleAndFacebookBtns.swift in Sources */,
 				265391DA1F5DFEA800C5EEF5 /* SignInVC.swift in Sources */,
 				265391D81F5DFC9800C5EEF5 /* BounceButton.swift in Sources */,
 				267B34811F606F4B0007088E /* SWRevealViewController.m in Sources */,
+				267B34861F60DA540007088E /* CameraVC.swift in Sources */,
 				265391D51F5DF7EE00C5EEF5 /* GoogleBtn.swift in Sources */,
 				265391E61F5EDB9000C5EEF5 /* Constants.swift in Sources */,
 			);

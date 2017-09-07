@@ -19,6 +19,9 @@
 		265391D81F5DFC9800C5EEF5 /* BounceButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 265391D71F5DFC9800C5EEF5 /* BounceButton.swift */; };
 		265391DA1F5DFEA800C5EEF5 /* SignInVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 265391D91F5DFEA800C5EEF5 /* SignInVC.swift */; };
 		265391E61F5EDB9000C5EEF5 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 265391E51F5EDB9000C5EEF5 /* Constants.swift */; };
+		267B347A1F606D290007088E /* SearchVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 267B34791F606D290007088E /* SearchVC.swift */; };
+		267B34811F606F4B0007088E /* SWRevealViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 267B34801F606F4B0007088E /* SWRevealViewController.m */; };
+		267B34841F6072C50007088E /* SettingsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 267B34831F6072C50007088E /* SettingsVC.swift */; };
 		2684235F1F5EE17E00BC610F /* FeedVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2684235E1F5EE17E00BC610F /* FeedVC.swift */; };
 		5CE5136D3ED1F32F94CCA210 /* Pods_DragNet.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 708E4DEECD64BC2B85263974 /* Pods_DragNet.framework */; };
 /* End PBXBuildFile section */
@@ -40,6 +43,11 @@
 		265391D91F5DFEA800C5EEF5 /* SignInVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignInVC.swift; sourceTree = "<group>"; };
 		265391E31F5E4C2300C5EEF5 /* DragNet.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = DragNet.entitlements; sourceTree = "<group>"; };
 		265391E51F5EDB9000C5EEF5 /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		267B34791F606D290007088E /* SearchVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchVC.swift; sourceTree = "<group>"; };
+		267B347E1F606F4B0007088E /* DragNet-Bridging-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "DragNet-Bridging-Header.h"; path = "../../../Downloads/Desktop Backgrounds/DragNet-Bridging-Header.h"; sourceTree = "<group>"; };
+		267B347F1F606F4B0007088E /* SWRevealViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SWRevealViewController.h; path = "../../../Downloads/Desktop Backgrounds/SWRevealViewController.h"; sourceTree = "<group>"; };
+		267B34801F606F4B0007088E /* SWRevealViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SWRevealViewController.m; path = "../../../Downloads/Desktop Backgrounds/SWRevealViewController.m"; sourceTree = "<group>"; };
+		267B34831F6072C50007088E /* SettingsVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsVC.swift; sourceTree = "<group>"; };
 		2684235E1F5EE17E00BC610F /* FeedVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FeedVC.swift; sourceTree = "<group>"; };
 		596D5A52913D44E34E1AC964 /* Pods-DragNet.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DragNet.release.xcconfig"; path = "Pods/Target Support Files/Pods-DragNet/Pods-DragNet.release.xcconfig"; sourceTree = "<group>"; };
 		708E4DEECD64BC2B85263974 /* Pods_DragNet.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DragNet.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -101,6 +109,9 @@
 			children = (
 				265391D91F5DFEA800C5EEF5 /* SignInVC.swift */,
 				2684235E1F5EE17E00BC610F /* FeedVC.swift */,
+				267B34791F606D290007088E /* SearchVC.swift */,
+				267B34831F6072C50007088E /* SettingsVC.swift */,
+				267B34821F6070560007088E /* OBJ-C */,
 			);
 			name = Controller;
 			sourceTree = "<group>";
@@ -143,6 +154,16 @@
 				265391E51F5EDB9000C5EEF5 /* Constants.swift */,
 			);
 			name = Constants;
+			sourceTree = "<group>";
+		};
+		267B34821F6070560007088E /* OBJ-C */ = {
+			isa = PBXGroup;
+			children = (
+				267B347E1F606F4B0007088E /* DragNet-Bridging-Header.h */,
+				267B347F1F606F4B0007088E /* SWRevealViewController.h */,
+				267B34801F606F4B0007088E /* SWRevealViewController.m */,
+			);
+			name = "OBJ-C";
 			sourceTree = "<group>";
 		};
 		29C3512B3E0E3C80288C974F /* Pods */ = {
@@ -198,6 +219,7 @@
 					262E56881F5CD6F4009B2422 = {
 						CreatedOnToolsVersion = 8.3.3;
 						DevelopmentTeam = 5GP62UZSP9;
+						LastSwiftMigration = 0830;
 						ProvisioningStyle = Automatic;
 						SystemCapabilities = {
 							com.apple.Keychain = {
@@ -293,12 +315,15 @@
 			buildActionMask = 2147483647;
 			files = (
 				2684235F1F5EE17E00BC610F /* FeedVC.swift in Sources */,
+				267B347A1F606D290007088E /* SearchVC.swift in Sources */,
 				262E568D1F5CD6F4009B2422 /* AppDelegate.swift in Sources */,
 				265391D31F5DF70F00C5EEF5 /* FacebookBtn.swift in Sources */,
 				262E56951F5CD6F4009B2422 /* DragNet.xcdatamodeld in Sources */,
+				267B34841F6072C50007088E /* SettingsVC.swift in Sources */,
 				265391CE1F5DF6BD00C5EEF5 /* GoogleAndFacebookBtns.swift in Sources */,
 				265391DA1F5DFEA800C5EEF5 /* SignInVC.swift in Sources */,
 				265391D81F5DFC9800C5EEF5 /* BounceButton.swift in Sources */,
+				267B34811F606F4B0007088E /* SWRevealViewController.m in Sources */,
 				265391D51F5DF7EE00C5EEF5 /* GoogleBtn.swift in Sources */,
 				265391E61F5EDB9000C5EEF5 /* Constants.swift in Sources */,
 			);
@@ -424,11 +449,14 @@
 			baseConfigurationReference = 1865278AE39AF2E8BCCD80D1 /* Pods-DragNet.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				DEVELOPMENT_TEAM = 5GP62UZSP9;
 				INFOPLIST_FILE = DragNet/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.CamGlam.DragNet;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "DragNet/DragNet-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
@@ -438,11 +466,13 @@
 			baseConfigurationReference = 596D5A52913D44E34E1AC964 /* Pods-DragNet.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				DEVELOPMENT_TEAM = 5GP62UZSP9;
 				INFOPLIST_FILE = DragNet/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.CamGlam.DragNet;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "DragNet/DragNet-Bridging-Header.h";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Release;

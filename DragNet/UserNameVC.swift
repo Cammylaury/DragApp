@@ -7,29 +7,56 @@
 //
 
 import UIKit
+import Firebase
+import FirebaseStorage
+import FirebaseDatabase
 
 class UserNameVC: UIViewController {
+    
+    var email: String!
+    var password: String!
+    
+    @IBOutlet weak var usernameTextField: UITextField!
+    
+    @IBOutlet weak var profileImage: UIImageView!
+    
+    var selectedImage: UIImage?
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        profileImage.layer.cornerRadius = 40
+        profileImage.clipsToBounds = true
+     
+        
+        let profileTapped = UITapGestureRecognizer(target: self, action: #selector(UserNameVC.handleSelectProfileImageView))
+        profileImage.addGestureRecognizer(profileTapped)
+        profileImage.isUserInteractionEnabled = true
+        
 
-        // Do any additional setup after loading the view.
-    }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
+    func handleSelectProfileImageView() {
+        let pickerController = UIImagePickerController()
+        pickerController.delegate = self
+        present(pickerController, animated: true, completion: nil)
     }
-    */
+    
+    @IBAction func createUsernameAndImage(_ sender: Any) {
+        
+        
+        
+    }
 
+}
+
+extension UserNameVC: UIImagePickerControllerDelegate, UINavigationControllerDelegate {
+    func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [String : Any]) {
+        if let image = info["UIImagePickerControllerOriginalImage"] as? UIImage {
+            selectedImage = image
+            profileImage.image = image
+        }
+        
+        dismiss(animated: true, completion: nil)
+    }
 }

@@ -86,6 +86,7 @@ class SignInVC: UIViewController {
                         } else {
                             print("Successfully authenticated with Firebase")
                             if let user = user {
+                                self.choosePictureAndUsername()
                                 self.completeSignIn(id: user.uid)
                             }
                         }
@@ -104,7 +105,19 @@ class SignInVC: UIViewController {
         performSegue(withIdentifier: "goToFeed", sender: nil)
     }
     
+    // if an account is being created, segue first to choose a username and profile picture!
+    func choosePictureAndUsername() {
+        performSegue(withIdentifier: "creatingAccount", sender: nil)
+        
+    }
     
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "creatingAccount" {
+            var userNameViewController = segue.destination as! UserNameVC
+            userNameViewController.email = self.emailTextField.text
+            userNameViewController.password = self.passwordTextField.text
+        }
+    }
     
 }
 

@@ -7,6 +7,7 @@
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="Navigation items with more than one left or right bar item" minToolsVersion="7.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -245,6 +246,20 @@
                                 <segue destination="6aW-5H-kcN" kind="show" id="UKn-sC-WEl"/>
                             </connections>
                         </barButtonItem>
+                        <rightBarButtonItems>
+                            <barButtonItem title="Sign Out!" id="O6l-5L-dHz">
+                                <connections>
+                                    <action selector="signOutTapped:" destination="r7x-yw-F9l" id="ijN-AC-xG0"/>
+                                </connections>
+                            </barButtonItem>
+                            <barButtonItem style="plain" id="hoU-nd-kyO">
+                                <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="TfC-D1-znE">
+                                    <rect key="frame" x="222" y="7" width="92" height="30"/>
+                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    <state key="normal" title="Button"/>
+                                </button>
+                            </barButtonItem>
+                        </rightBarButtonItems>
                     </navigationItem>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="d4D-Ns-D5W" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -339,29 +354,16 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="35" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="HQo-U3-y0J">
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="221" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="HQo-U3-y0J">
                                 <rect key="frame" x="0.0" y="64" width="414" height="569"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="35" id="HCQ-Wl-n9w">
-                                        <rect key="frame" x="0.0" y="28" width="414" height="35"/>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="221" id="HCQ-Wl-n9w">
+                                        <rect key="frame" x="0.0" y="28" width="414" height="221"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="HCQ-Wl-n9w" id="vSh-5J-bM6">
-                                            <rect key="frame" x="0.0" y="0.0" width="414" height="34"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="220"/>
                                             <autoresizingMask key="autoresizingMask"/>
-                                            <subviews>
-                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3MY-nv-QNc">
-                                                    <rect key="frame" x="177" y="5" width="60" height="30"/>
-                                                    <state key="normal" title="Sign Out"/>
-                                                    <connections>
-                                                        <action selector="signOutTapped:" destination="6aW-5H-kcN" eventType="touchUpInside" id="SaU-sl-Q95"/>
-                                                    </connections>
-                                                </button>
-                                            </subviews>
-                                            <constraints>
-                                                <constraint firstItem="3MY-nv-QNc" firstAttribute="top" secondItem="vSh-5J-bM6" secondAttribute="topMargin" constant="-3" id="3e8-lf-PD0"/>
-                                                <constraint firstItem="3MY-nv-QNc" firstAttribute="centerX" secondItem="vSh-5J-bM6" secondAttribute="centerX" id="533-XS-ygu"/>
-                                            </constraints>
                                         </tableViewCellContentView>
                                     </tableViewCell>
                                 </prototypes>
@@ -380,7 +382,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="3ro-lK-Mxd" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3451" y="-659"/>
+            <point key="canvasLocation" x="3450.7246376811595" y="-659.51086956521749"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="OUT-ml-tsT">
@@ -600,11 +602,11 @@
                                     <constraint firstAttribute="height" constant="57" id="zGB-pc-Sc8"/>
                                 </constraints>
                             </view>
-                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="gS6-va-eMH">
-                                <rect key="frame" x="160" y="621" width="95" height="95"/>
+                            <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="gS6-va-eMH">
+                                <rect key="frame" x="160" y="621" width="0.0" height="95"/>
                                 <subviews>
-                                    <button hidden="YES" opaque="NO" userInteractionEnabled="NO" alpha="0.0" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sue-cE-xYr" userLabel="Facebook Button" customClass="FacebookBtn" customModule="DragNet" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="0.0" width="95" height="95"/>
+                                    <button hidden="YES" opaque="NO" userInteractionEnabled="NO" alpha="0.0" contentMode="scaleToFill" ambiguous="YES" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sue-cE-xYr" userLabel="Facebook Button" customClass="FacebookBtn" customModule="DragNet" customModuleProvider="target">
+                                        <rect key="frame" x="-207" y="-621" width="95" height="0.0"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="95" id="jXr-OL-8qO"/>
                                             <constraint firstAttribute="width" constant="95" id="zjS-rS-1Wo"/>
@@ -616,7 +618,7 @@
                                 </subviews>
                             </stackView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ue3-UL-F6k" customClass="BounceButton" customModule="DragNet" customModuleProvider="target">
-                                <rect key="frame" x="127" y="479" width="161" height="46"/>
+                                <rect key="frame" x="126.66666666666669" y="479" width="161" height="46"/>
                                 <color key="backgroundColor" red="0.71884914339999995" green="0.3831127923" blue="0.38224526440000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="161" id="vP5-vR-wjY"/>

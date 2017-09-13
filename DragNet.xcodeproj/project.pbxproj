@@ -24,8 +24,8 @@
 		267B34841F6072C50007088E /* SettingsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 267B34831F6072C50007088E /* SettingsVC.swift */; };
 		267B34861F60DA540007088E /* CameraVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 267B34851F60DA540007088E /* CameraVC.swift */; };
 		267B348A1F619C670007088E /* UIScrollView+EmptyDataSet.m in Sources */ = {isa = PBXBuildFile; fileRef = 267B34891F619C670007088E /* UIScrollView+EmptyDataSet.m */; };
-		267B348C1F619F270007088E /* tableViewTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 267B348B1F619F270007088E /* tableViewTableViewController.swift */; };
 		267B348E1F61A7330007088E /* UserNameVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 267B348D1F61A7330007088E /* UserNameVC.swift */; };
+		267B34901F6481FE0007088E /* TextDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 267B348F1F6481FE0007088E /* TextDelegate.swift */; };
 		2684235F1F5EE17E00BC610F /* FeedVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2684235E1F5EE17E00BC610F /* FeedVC.swift */; };
 		5CE5136D3ED1F32F94CCA210 /* Pods_DragNet.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 708E4DEECD64BC2B85263974 /* Pods_DragNet.framework */; };
 /* End PBXBuildFile section */
@@ -55,8 +55,8 @@
 		267B34851F60DA540007088E /* CameraVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CameraVC.swift; sourceTree = "<group>"; };
 		267B34881F619C670007088E /* UIScrollView+EmptyDataSet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIScrollView+EmptyDataSet.h"; sourceTree = "<group>"; };
 		267B34891F619C670007088E /* UIScrollView+EmptyDataSet.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIScrollView+EmptyDataSet.m"; sourceTree = "<group>"; };
-		267B348B1F619F270007088E /* tableViewTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = tableViewTableViewController.swift; sourceTree = "<group>"; };
 		267B348D1F61A7330007088E /* UserNameVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserNameVC.swift; sourceTree = "<group>"; };
+		267B348F1F6481FE0007088E /* TextDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TextDelegate.swift; sourceTree = "<group>"; };
 		2684235E1F5EE17E00BC610F /* FeedVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FeedVC.swift; sourceTree = "<group>"; };
 		596D5A52913D44E34E1AC964 /* Pods-DragNet.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DragNet.release.xcconfig"; path = "Pods/Target Support Files/Pods-DragNet/Pods-DragNet.release.xcconfig"; sourceTree = "<group>"; };
 		708E4DEECD64BC2B85263974 /* Pods_DragNet.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DragNet.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -116,13 +116,12 @@
 		265391CA1F5DD71100C5EEF5 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
-				267B348B1F619F270007088E /* tableViewTableViewController.swift */,
 				265391D91F5DFEA800C5EEF5 /* SignInVC.swift */,
+				267B348D1F61A7330007088E /* UserNameVC.swift */,
 				2684235E1F5EE17E00BC610F /* FeedVC.swift */,
 				267B34791F606D290007088E /* SearchVC.swift */,
 				267B34831F6072C50007088E /* SettingsVC.swift */,
 				267B34851F60DA540007088E /* CameraVC.swift */,
-				267B348D1F61A7330007088E /* UserNameVC.swift */,
 				267B34871F619BFB0007088E /* Empty Data Set */,
 				267B34821F6070560007088E /* RevealViewController */,
 			);
@@ -157,6 +156,7 @@
 			isa = PBXGroup;
 			children = (
 				265391D71F5DFC9800C5EEF5 /* BounceButton.swift */,
+				267B348F1F6481FE0007088E /* TextDelegate.swift */,
 			);
 			name = "Custom Controls";
 			sourceTree = "<group>";
@@ -339,7 +339,6 @@
 				2684235F1F5EE17E00BC610F /* FeedVC.swift in Sources */,
 				267B347A1F606D290007088E /* SearchVC.swift in Sources */,
 				262E568D1F5CD6F4009B2422 /* AppDelegate.swift in Sources */,
-				267B348C1F619F270007088E /* tableViewTableViewController.swift in Sources */,
 				267B348E1F61A7330007088E /* UserNameVC.swift in Sources */,
 				265391D31F5DF70F00C5EEF5 /* FacebookBtn.swift in Sources */,
 				262E56951F5CD6F4009B2422 /* DragNet.xcdatamodeld in Sources */,
@@ -348,6 +347,7 @@
 				265391CE1F5DF6BD00C5EEF5 /* GoogleAndFacebookBtns.swift in Sources */,
 				265391DA1F5DFEA800C5EEF5 /* SignInVC.swift in Sources */,
 				265391D81F5DFC9800C5EEF5 /* BounceButton.swift in Sources */,
+				267B34901F6481FE0007088E /* TextDelegate.swift in Sources */,
 				267B34811F606F4B0007088E /* SWRevealViewController.m in Sources */,
 				267B34861F60DA540007088E /* CameraVC.swift in Sources */,
 				265391D51F5DF7EE00C5EEF5 /* GoogleBtn.swift in Sources */,

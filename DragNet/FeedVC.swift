@@ -20,4 +20,11 @@ class FeedVC: UIViewController {
         
 
     }
+    
+    @IBAction func signOutTapped(_ sender: Any) {
+        let keychainResult = KeychainWrapper.standard.remove(key: KEY_UID)
+        print(keychainResult)
+        try! FIRAuth.auth()?.signOut()
+        performSegue(withIdentifier: "goToSignIn", sender: nil)
+    }
 }

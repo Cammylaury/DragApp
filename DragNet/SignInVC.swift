@@ -25,9 +25,7 @@ class SignInVC: UIViewController {
         
         signInBtn.layer.cornerRadius = 12
         
-        
     }
-    
     
     override func viewDidAppear(_ animated: Bool) {
         if let _ = KeychainWrapper.standard.string(forKey: KEY_UID) {
@@ -83,10 +81,10 @@ class SignInVC: UIViewController {
                     FIRAuth.auth()?.createUser(withEmail: email, password: password, completion: { (user, error) in
                         if error != nil {
                             print("Unable to authenticate with Firebase using email")
+                            self.choosePictureAndUsername()
                         } else {
                             print("Successfully authenticated with Firebase")
                             if let user = user {
-                                self.choosePictureAndUsername()
                                 self.completeSignIn(id: user.uid)
                             }
                         }
@@ -113,10 +111,20 @@ class SignInVC: UIViewController {
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if segue.identifier == "creatingAccount" {
-            var userNameViewController = segue.destination as! UserNameVC
+            let userNameViewController = segue.destination as! UserNameVC
             userNameViewController.email = self.emailTextField.text
             userNameViewController.password = self.passwordTextField.text
         }
+    }
+    
+    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
+        self.view.endEditing(true)
+    }
+    
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+        emailTextField.resignFirstResponder()
+        passwordTextField.resignFirstResponder()
+        return(true)
     }
     
 }

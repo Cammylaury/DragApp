@@ -14,7 +14,7 @@ import FBSDKLoginKit
 import Firebase
 import SwiftKeychainWrapper
 
-class SignInVC: UIViewController {
+class SignInVC: UIViewController, UITextFieldDelegate {
 
     @IBOutlet weak var signInBtn: UIButton!
     @IBOutlet weak var emailTextField: UITextField!
@@ -23,14 +23,27 @@ class SignInVC: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        emailTextField.delegate = self
+        passwordTextField.delegate = self
+        
         signInBtn.layer.cornerRadius = 12
         
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        self.subscribeToKeyboardNotifications()
     }
     
     override func viewDidAppear(_ animated: Bool) {
         if let _ = KeychainWrapper.standard.string(forKey: KEY_UID) {
             performSegue(withIdentifier: "goToFeed", sender: nil)
         }
+    }
+    
+    override func viewWillDisappear(_ animated: Bool) {
+        super.viewWillDisappear(animated)
+        unsubscribeFromKeyboardNotifications()
     }
     
     @IBAction func facebookBtnTapped(_ sender: Any) {
@@ -69,7 +82,7 @@ class SignInVC: UIViewController {
     }
     
     @IBAction func signInTapped(_ sender: Any) {
-        
+        view.endEditing(true)
         if let email = emailTextField.text, let password = passwordTextField.text {
             FIRAuth.auth()?.signIn(withEmail: email, password: password, completion: { (user, error) in
                 if error == nil {
@@ -81,10 +94,15 @@ class SignInVC: UIViewController {
                     FIRAuth.auth()?.createUser(withEmail: email, password: password, completion: { (user, error) in
                         if error != nil {
                             print("Unable to authenticate with Firebase using email")
-                            self.choosePictureAndUsername()
+                            
+                            let alert = UIAlertController(title: "Oh no!", message: "Please enter a valid email and password!", preferredStyle: UIAlertControllerStyle.alert)
+                            alert.addAction(UIAlertAction(title: "Ok", style: UIAlertActionStyle.default, handler: nil))
+                            self.present(alert, animated: true, completion: nil)
+                            
                         } else {
                             print("Successfully authenticated with Firebase")
                             if let user = user {
+                                self.choosePictureAndUsername()
                                 self.completeSignIn(id: user.uid)
                             }
                         }
@@ -117,8 +135,9 @@ class SignInVC: UIViewController {
         }
     }
     
+    // Setting up keyboard stuff
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
-        self.view.endEditing(true)
+        view.endEditing(true)
     }
     
     func textFieldShouldReturn(_ textField: UITextField) -> Bool {
@@ -127,6 +146,38 @@ class SignInVC: UIViewController {
         return(true)
     }
     
+    func keyboardWillShow(_ notification:Notification) {
+        
+        // move keyboard based on the keyboard height.
+       // if passwordTextField.isFirstResponder {
+           // view.frame.origin.y = -getKeyboardHeight(notification)
+        
+    }
+    
+    func keyboardWillHide(_ notification:Notification) {
+        if emailTextField.isFirstResponder {
+            view.frame.origin.y = 0.0
+        }
+    }
+    
+    func subscribeToKeyboardNotifications() {
+        NotificationCenter.default.addObserver(self, selector: #selector(keyboardWillShow(_:)), name: .UIKeyboardWillShow, object: nil)
+        
+        NotificationCenter.default.addObserver(self, selector: #selector(keyboardWillHide(_:)), name: .UIKeyboardWillHide, object: nil)
+    }
+    
+    func unsubscribeFromKeyboardNotifications() {
+        NotificationCenter.default.removeObserver(self, name: .UIKeyboardWillShow, object: nil)
+        NotificationCenter.default.removeObserver(self, name: .UIKeyboardWillHide, object: nil)
+    }
+    
+    func getKeyboardHeight(_ notification:Notification) -> CGFloat {
+        let userInfo = notification.userInfo
+        let keyboardSize = userInfo![UIKeyboardFrameEndUserInfoKey] as! NSValue
+        
+        // Unexpected non-void return value in void function---------
+        return keyboardSize.cgRectValue.height
+    }
+    
 }
-
 

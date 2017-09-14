@@ -25,7 +25,6 @@ class UserNameVC: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        
         profileImage.layer.cornerRadius = 40
         profileImage.clipsToBounds = true
      
@@ -43,7 +42,12 @@ class UserNameVC: UIViewController {
         present(pickerController, animated: true, completion: nil)
     }
     
+    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
+        view.endEditing(true)
+    }
+    
     @IBAction func createUsernameAndImage(_ sender: Any) {
+        view.endEditing(true)
         FIRAuth.auth()?.createUser(withEmail: email, password: password, completion: { (user: FIRUser?, error: Error?) in
             if error != nil {
                 print("Created!")
@@ -74,8 +78,6 @@ class UserNameVC: UIViewController {
         })
         
         performSegue(withIdentifier: "toFeed", sender: nil)
-        
-        
     }
 
 }

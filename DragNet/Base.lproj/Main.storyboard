@@ -204,19 +204,19 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="413" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="dqr-Cz-HEa">
-                                <rect key="frame" x="0.0" y="64" width="414" height="623"/>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="480" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="dqr-Cz-HEa">
+                                <rect key="frame" x="0.0" y="64" width="414" height="672"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="cell" rowHeight="413" id="Pfx-PE-n4L">
-                                        <rect key="frame" x="0.0" y="28" width="414" height="413"/>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="postCell" rowHeight="480" id="Pfx-PE-n4L">
+                                        <rect key="frame" x="0.0" y="28" width="414" height="480"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Pfx-PE-n4L" id="s5a-Fy-ro3">
-                                            <rect key="frame" x="0.0" y="0.0" width="414" height="413"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="480"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="AKT-J4-MPY">
-                                                    <rect key="frame" x="-1" y="46" width="415" height="320"/>
+                                                    <rect key="frame" x="-1" y="46" width="415" height="387.66666666666669"/>
                                                 </imageView>
                                             </subviews>
                                             <constraints>
@@ -233,7 +233,7 @@
                         <color key="backgroundColor" red="0.99019607843137258" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="dqr-Cz-HEa" firstAttribute="leading" secondItem="5WJ-Xi-HcO" secondAttribute="leading" id="Deh-IX-tfb"/>
-                            <constraint firstItem="9w4-ZC-lhY" firstAttribute="top" secondItem="dqr-Cz-HEa" secondAttribute="bottom" id="Nnm-1r-kjB"/>
+                            <constraint firstItem="9w4-ZC-lhY" firstAttribute="top" secondItem="dqr-Cz-HEa" secondAttribute="bottom" constant="-49" id="Nnm-1r-kjB"/>
                             <constraint firstItem="dqr-Cz-HEa" firstAttribute="top" secondItem="gM2-vO-LSH" secondAttribute="bottom" id="ZLL-cv-shT"/>
                             <constraint firstAttribute="trailing" secondItem="dqr-Cz-HEa" secondAttribute="trailing" id="ckf-vv-0EP"/>
                         </constraints>
@@ -255,7 +255,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="d4D-Ns-D5W" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2567" y="-659"/>
+            <point key="canvasLocation" x="2566.666666666667" y="-659.51086956521749"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="Lw0-h3-5Kv">
@@ -398,11 +398,11 @@
             </objects>
             <point key="canvasLocation" x="932" y="25"/>
         </scene>
-        <!--Navigation Controller-->
+        <!--Home-->
         <scene sceneID="2fO-Ko-HbD">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="F49-l6-bbe" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="" image="home" id="mmg-Ol-522">
+                    <tabBarItem key="tabBarItem" title="Home" image="home" id="mmg-Ol-522">
                         <inset key="imageInsets" minX="0.0" minY="5" maxX="0.0" maxY="-5"/>
                     </tabBarItem>
                     <toolbarItems/>
@@ -597,7 +597,7 @@
                                 <rect key="frame" x="159.66666666666666" y="621" width="0.0" height="0.0"/>
                                 <subviews>
                                     <button hidden="YES" opaque="NO" userInteractionEnabled="NO" alpha="0.0" contentMode="scaleToFill" ambiguous="YES" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sue-cE-xYr" userLabel="Facebook Button" customClass="FacebookBtn" customModule="DragNet" customModuleProvider="target">
-                                        <rect key="frame" x="-207.33333333333334" y="-668.66666666666663" width="95" height="0.0"/>
+                                        <rect key="frame" x="-207" y="-668.66666666666663" width="95" height="0.0"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="95" id="jXr-OL-8qO"/>
                                             <constraint firstAttribute="width" constant="95" id="zjS-rS-1Wo"/>

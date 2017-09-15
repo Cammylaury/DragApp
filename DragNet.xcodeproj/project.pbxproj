@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		261A59451F6C51BE00564381 /* Post.swift in Sources */ = {isa = PBXBuildFile; fileRef = 261A59441F6C51BE00564381 /* Post.swift */; };
 		262E568D1F5CD6F4009B2422 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 262E568C1F5CD6F4009B2422 /* AppDelegate.swift */; };
 		262E56921F5CD6F4009B2422 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 262E56901F5CD6F4009B2422 /* Main.storyboard */; };
 		262E56951F5CD6F4009B2422 /* DragNet.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 262E56931F5CD6F4009B2422 /* DragNet.xcdatamodeld */; };
@@ -32,6 +33,7 @@
 
 /* Begin PBXFileReference section */
 		1865278AE39AF2E8BCCD80D1 /* Pods-DragNet.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DragNet.debug.xcconfig"; path = "Pods/Target Support Files/Pods-DragNet/Pods-DragNet.debug.xcconfig"; sourceTree = "<group>"; };
+		261A59441F6C51BE00564381 /* Post.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Post.swift; sourceTree = "<group>"; };
 		262E56891F5CD6F4009B2422 /* DragNet.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DragNet.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		262E568C1F5CD6F4009B2422 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		262E56911F5CD6F4009B2422 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -139,6 +141,7 @@
 		265391CC1F5DD71E00C5EEF5 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				261A59441F6C51BE00564381 /* Post.swift */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -340,6 +343,7 @@
 				267B347A1F606D290007088E /* SearchVC.swift in Sources */,
 				262E568D1F5CD6F4009B2422 /* AppDelegate.swift in Sources */,
 				267B348E1F61A7330007088E /* UserNameVC.swift in Sources */,
+				261A59451F6C51BE00564381 /* Post.swift in Sources */,
 				265391D31F5DF70F00C5EEF5 /* FacebookBtn.swift in Sources */,
 				262E56951F5CD6F4009B2422 /* DragNet.xcdatamodeld in Sources */,
 				267B34841F6072C50007088E /* SettingsVC.swift in Sources */,

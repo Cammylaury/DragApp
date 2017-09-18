@@ -11,8 +11,18 @@ import SwiftKeychainWrapper
 import Firebase
 import DZNEmptyDataSet
 import FirebaseDatabase
+import FaveButton
 
 class FeedVC: UIViewController {
+    
+    @IBOutlet weak var likeButton: FaveButton!
+    
+    @IBInspectable public var normalColor: UIColor!
+    @IBInspectable public var selectedColor: UIColor!
+    @IBInspectable public var dotFirstColor: UIColor!
+    @IBInspectable public var dotSecondColor: UIColor!
+    @IBInspectable public var circleFromColor: UIColor!
+    @IBInspectable public var circleToColor: UIColor!
     
     @IBOutlet weak var tableView: UITableView!
     var posts = [Post]()

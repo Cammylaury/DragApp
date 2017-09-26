@@ -48,24 +48,24 @@ class UserNameVC: UIViewController {
     
     @IBAction func createUsernameAndImage(_ sender: Any) {
         view.endEditing(true)
-        FIRAuth.auth()?.createUser(withEmail: email, password: password, completion: { (user: FIRUser?, error: Error?) in
+        Auth.auth().createUser(withEmail: email, password: password, completion: { (user: User?, error: Error?) in
             if error != nil {
                 print("Created!")
                 return
             }
             
             let uid = user?.uid
-            let storageRef = FIRStorage.storage().reference(forURL: "gs://dragnet-3b349.appspot.com").child("profileImage").child(uid!)
+            let storageRef = Storage.storage().reference(forURL: "gs://dragnet-3b349.appspot.com").child("profileImage").child(uid!)
             
             if let profileImg = self.selectedImage, let imageData = UIImageJPEGRepresentation(profileImg, 0.1) {
-                storageRef.put(imageData, metadata: nil, completion: { (metadata, error) in
+                storageRef.putData(imageData, metadata: nil, completion: { (metadata, error) in
                     
                     if error != nil {
                         return
                     }
                     
                     let profileImageURL = metadata?.downloadURL()?.absoluteString
-                    let ref = FIRDatabase.database().reference()
+                    let ref = Database.database().reference()
                     let userReference = ref.child("users")
                     
                     let newUserReference = userReference.child(uid!)

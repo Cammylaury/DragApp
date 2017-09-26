@@ -14,7 +14,7 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "6699E7E0E9FC8237C27F4657D5DAD802"
+               BlueprintIdentifier = "5BEA317A982E916D1D272E1085DCCEB0"
                BuildableName = "Pods_DragNet.framework"
                BlueprintName = "Pods-DragNet"
                ReferencedContainer = "container:Pods.xcodeproj">
@@ -26,6 +26,7 @@
       buildConfiguration = "Debug"
       selectedDebuggerIdentifier = "Xcode.DebuggerFoundation.Debugger.LLDB"
       selectedLauncherIdentifier = "Xcode.DebuggerFoundation.Launcher.LLDB"
+      language = ""
       shouldUseLaunchSchemeArgsEnv = "YES">
       <Testables>
       </Testables>
@@ -36,6 +37,7 @@
       buildConfiguration = "Debug"
       selectedDebuggerIdentifier = "Xcode.DebuggerFoundation.Debugger.LLDB"
       selectedLauncherIdentifier = "Xcode.DebuggerFoundation.Launcher.LLDB"
+      language = ""
       launchStyle = "0"
       useCustomWorkingDirectory = "NO"
       ignoresPersistentStateOnLaunch = "NO"
@@ -45,7 +47,7 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "6699E7E0E9FC8237C27F4657D5DAD802"
+            BlueprintIdentifier = "5BEA317A982E916D1D272E1085DCCEB0"
             BuildableName = "Pods_DragNet.framework"
             BlueprintName = "Pods-DragNet"
             ReferencedContainer = "container:Pods.xcodeproj">

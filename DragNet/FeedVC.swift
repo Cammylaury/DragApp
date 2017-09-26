@@ -11,18 +11,11 @@ import SwiftKeychainWrapper
 import Firebase
 import DZNEmptyDataSet
 import FirebaseDatabase
-import FaveButton
 
 class FeedVC: UIViewController {
     
-    @IBOutlet weak var likeButton: FaveButton!
+    @IBOutlet weak var likeButton: UIButton!
     
-    @IBInspectable public var normalColor: UIColor!
-    @IBInspectable public var selectedColor: UIColor!
-    @IBInspectable public var dotFirstColor: UIColor!
-    @IBInspectable public var dotSecondColor: UIColor!
-    @IBInspectable public var circleFromColor: UIColor!
-    @IBInspectable public var circleToColor: UIColor!
     
     @IBOutlet weak var tableView: UITableView!
     var posts = [Post]()
@@ -32,11 +25,13 @@ class FeedVC: UIViewController {
         tableView.dataSource = self
         loadPosts()
         var post = Post(captionText: "test", photoURLString: "testUrl")
-
+        
+        // Adding faveButton Animations
+        
     }
     
     func loadPosts() {
-        FIRDatabase.database().reference().child("posts").observe(.childAdded) { (snapshot: FIRDataSnapshot) in
+        Database.database().reference().child("posts").observe(.childAdded) { (snapshot: DataSnapshot) in
             print(snapshot.value)
             
             if let dict = snapshot.value as? [String: Any] {
@@ -54,7 +49,7 @@ class FeedVC: UIViewController {
     @IBAction func signOutTapped(_ sender: Any) {
         let keychainResult = KeychainWrapper.standard.remove(key: KEY_UID)
         print(keychainResult)
-        try! FIRAuth.auth()?.signOut()
+        try! Auth.auth().signOut()
         performSegue(withIdentifier: "goToSignIn", sender: nil)
     }
 }

@@ -26,7 +26,7 @@ class SettingsVC: UIViewController {
     @IBAction func signOutTapped(_ sender: Any) {
         let keychainResult = KeychainWrapper.standard.remove(key: KEY_UID)
         print(keychainResult)
-        try! FIRAuth.auth()?.signOut()
+        try! Auth.auth().signOut()
         performSegue(withIdentifier: "goToSignIn", sender: nil)
     }
     

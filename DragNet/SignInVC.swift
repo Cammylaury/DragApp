@@ -90,6 +90,12 @@ class SignInVC: UIViewController, UITextFieldDelegate {
                     if let user = user {
                         self.completeSignIn(id: user.uid)
                     }
+                    // password needs to be at least 6 characters.
+                    if password.characters.count < 6 || password.characters.count == 0 {
+                        let alert = UIAlertController(title: "Oh no!", message: "Make sure your password is at least 6 characters long!", preferredStyle: UIAlertControllerStyle.alert)
+                        alert.addAction(UIAlertAction(title: "Got it!", style: UIAlertActionStyle.default, handler: nil))
+                        self.present(alert, animated: true, completion: nil)
+                    }
                 } else {
                     Auth.auth().createUser(withEmail: email, password: password, completion: { (user, error) in
                         if error != nil {
